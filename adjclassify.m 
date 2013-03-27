@@ -1,0 +1,6 @@
+function [yhat] = adjclassify(Ktest,a,b)
+[m,n]=size(Ktest);
+for i=1:m
+yhat(i,1) = sign(Ktest(i,:)*a-b);
+end
+end
